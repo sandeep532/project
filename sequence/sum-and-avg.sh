@@ -1,10 +1,11 @@
 #!/bin/bash -x
-a=$(((RANDOM%99)))
-b=$(((RANDOM%99)))
-c=$(((RANDOM%99)))
-d=$(((RANDOM%99)))
-e=$(((RANDOM%99)))
-sum=$((a+b+c+d+e))
-avg=$((sum/5))
+
+num1=$(($((RANDOM%90))+10))
+num2=$(($((RANDOM%90))+10))
+num3=$(($((RANDOM%90))+10))
+num4=$(($((RANDOM%90))+10))
+num5=$(($((RANDOM%90))+10))
+
+sum=$((num1+num2+num3+num4+num5))
 echo $sum
-echo $avg
+echo $((sum/5))
